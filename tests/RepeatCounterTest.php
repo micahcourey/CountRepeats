@@ -46,5 +46,19 @@
             //Assert
             $this->assertEquals("no word matches found", $result);
         }
+
+        function test_countRepeats_mixedCase()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = "fRoG";
+            $input_two = "frOg";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals("frog", $result);
+        }
     }
 ?>
