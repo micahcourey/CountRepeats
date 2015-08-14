@@ -88,5 +88,19 @@
             //Assert
             $this->assertEquals(4, $result);
         }
+
+        function test_countRepeats_countWordNone()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = '';
+            $input_two = '';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals("0", $result);
+        }
     }
 ?>

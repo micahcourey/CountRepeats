@@ -36,3 +36,10 @@ Input2: Dog, is a dog? A cat is not a dog! a frog is not a dog.
 Output: 4
 This will test to check if punctuation is being stripped from the words so that it will counter
 words with punctuation on the end.
+
+Test 7: Enter nothing and returns that the word appears 0 times.
+Input1: ''
+Input2: ''
+Output: 0
+This will test to check if counter returns 0 for when nothing is entered because I realized that the
+method is processing a blank input as 1.
