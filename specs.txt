@@ -1,0 +1,30 @@
+Test 1: Enter a two identical letters and return the letter.
+Input1: m
+Input2: m
+output: m
+This will test whether we can check the input letter and output a match.
+
+Test 2: Enter two identical words and return the word if they match.
+Input1: dog
+Input2: dog
+Output: dog
+This will test to see if the app can take two inputs and compare for a match
+
+Test 3: Enter two different words and return a message saying "no word matches found".
+Input1: dog
+Input2: cat
+Output: "no word matches found".
+This will test two different words and make sure it displays a message if no match is found.
+
+Test 4: Enter two words in mixed case and still return the word matches.
+Input1: fRoG
+Input2: frOg
+Output: frog
+This will test to check that the user can input words in mixed case and still get a match
+
+Test 5: Enter a single word and enter a string of words and count the number of times the single
+word appears in the string.
+Input1: dog
+Input2: Dog is a dog a cat is not a dog a frog is not a dog.
+Output: 4
+This will test to check if the app can count the word matches in a string and return the total number.
