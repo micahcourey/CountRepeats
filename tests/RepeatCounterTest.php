@@ -32,5 +32,19 @@
             //Assert
             $this->assertEquals("dog", $result);
         }
+
+        function test_countRepeats_noMatch()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = "dog";
+            $input_two = "cat";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals("no word matches found", $result);
+        }
     }
 ?>

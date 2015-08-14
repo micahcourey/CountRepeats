@@ -8,6 +8,8 @@
 
             if ($input_one == $input_two) {
                 return $input_one;
+            } else {
+                return "no word matches found";
             }
         }
     }
