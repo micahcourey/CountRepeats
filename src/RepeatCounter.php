@@ -5,12 +5,18 @@
         {
             $input_one = strtolower($input_one);
             $input_two = strtolower($input_two);
+            $sentence_array = explode(" ", $input_two);
 
-            if ($input_one == $input_two) {
-                return $input_one;
-            } else {
-                return "no word matches found";
-            }
+            $counter = 0;
+
+            foreach ($sentence_array as $word)
+                if ($word == $input_one) {
+                    $counter = $counter + 1;
+                }
+                if ($counter === 0) {
+                    return "no word matches found";
+                }
+            return $counter;
         }
     }
 ?>

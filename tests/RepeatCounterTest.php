@@ -16,7 +16,7 @@
             $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
 
             //Assert
-            $this->assertEquals("m", $result);
+            $this->assertEquals(1, $result);
         }
 
         function test_countRepeats_oneWord()
@@ -30,7 +30,7 @@
             $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
 
             //Assert
-            $this->assertEquals("dog", $result);
+            $this->assertEquals(1, $result);
         }
 
         function test_countRepeats_noMatch()
@@ -58,7 +58,21 @@
             $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
 
             //Assert
-            $this->assertEquals("frog", $result);
+            $this->assertEquals(1, $result);
+        }
+
+        function test_countRepeats_countWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = "dog";
+            $input_two = "Dog is a dog a cat is not a dog a frog is not a dog";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals(4, $result);
         }
     }
 ?>
