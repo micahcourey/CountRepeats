@@ -13,9 +13,6 @@
                 if (($word == $input_one) && ($input_one !== '')) {
                     $counter = $counter + 1;
                 }
-                if ($counter === 0) {
-                    return '0';
-                }
             return $counter;
         }
     }
