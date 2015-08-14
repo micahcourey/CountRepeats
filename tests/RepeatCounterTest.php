@@ -18,5 +18,19 @@
             //Assert
             $this->assertEquals("m", $result);
         }
+
+        function test_countRepeats_oneWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = "dog";
+            $input_two = "dog";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals("dog", $result);
+        }
     }
 ?>
