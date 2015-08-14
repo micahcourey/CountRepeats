@@ -13,7 +13,7 @@ This will test to see if the app can take two inputs and compare for a match
 Test 3: Enter two different words and return a message saying "no word matches found".
 Input1: dog
 Input2: cat
-Output: "no word matches found".
+Output: 0
 This will test two different words and make sure it displays a message if no match is found.
 
 Test 4: Enter two words in mixed case and still return the word count 1.
@@ -33,5 +33,6 @@ Test 6: Enter a single word and a sentence with punctuation and count the number
 the single word appears in the string.
 Input1: dog
 Input2: Dog, is a dog? A cat is not a dog! a frog is not a dog.
+Output: 4
 This will test to check if punctuation is being stripped from the words so that it will counter
 words with punctuation on the end.

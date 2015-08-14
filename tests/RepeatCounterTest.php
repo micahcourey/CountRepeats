@@ -44,7 +44,7 @@
             $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
 
             //Assert
-            $this->assertEquals("no word matches found", $result);
+            $this->assertEquals("0", $result);
         }
 
         function test_countRepeats_mixedCase()
