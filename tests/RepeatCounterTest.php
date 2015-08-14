@@ -74,5 +74,19 @@
             //Assert
             $this->assertEquals(4, $result);
         }
+
+        function test_countRepeats_countWordPuncuation()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = "dog";
+            $input_two = "Dog, is a dog? A cat is not a dog! a frog is not a dog.";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals(4, $result);
+        }
     }
 ?>

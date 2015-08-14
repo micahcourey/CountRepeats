@@ -28,3 +28,10 @@ Input1: dog
 Input2: Dog is a dog a cat is not a dog a frog is not a dog
 Output: 4
 This will test to check if the app can count the word matches in a string and return the total number.
+
+Test 6: Enter a single word and a sentence with punctuation and count the number of times
+the single word appears in the string.
+Input1: dog
+Input2: Dog, is a dog? A cat is not a dog! a frog is not a dog.
+This will test to check if punctuation is being stripped from the words so that it will counter
+words with punctuation on the end.
